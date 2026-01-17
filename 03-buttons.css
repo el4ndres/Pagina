@@ -1,0 +1,72 @@
+/* ============================================
+   BOTONES
+   ============================================
+   Este archivo estila:
+   - Botón primario (dorado)
+   - Botón secundario (azul marino)
+   - Botón CTA (llamada a la acción)
+   - Botón de formulario
+   - Efectos hover y transiciones
+   ============================================ */
+
+/* Estilos base para todos los botones */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Botón primario - dorado con texto azul marino */
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #c9945f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+}
+
+/* Botón secundario - azul marino con texto blanco */
+.btn-secondary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 58, 82, 0.3);
+}
+
+/* Botón CTA - más grande y prominente */
+.btn-cta {
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+}
+
+.btn-cta:hover {
+    background-color: #c9945f;
+    transform: translateY(-2px);
+}
+
+/* Botón de formulario - ancho completo */
+.btn-form {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.btn-form:hover {
+    background-color: var(--secondary);
+}

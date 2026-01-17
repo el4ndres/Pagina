@@ -1,0 +1,43 @@
+/* ============================================
+   ENCABEZADOS DE SECCIONES
+   ============================================
+   Este archivo estila:
+   - Títulos principales de cada sección
+   - Línea decorativa de acento
+   - Espaciado y tipografía
+   - Responsive para móvil y desktop
+   ============================================ */
+
+/* Contenedor del encabezado de sección */
+.section-header {
+    margin-bottom: 3rem;
+}
+
+/* Título h2 de las secciones */
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Aumentar tamaño en desktop */
+@media (min-width: 768px) {
+    .section-header h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Reducir tamaño en móvil */
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Línea decorativa dorada bajo el título */
+.accent-line {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--accent);
+    border-radius: 0.2rem;
+}

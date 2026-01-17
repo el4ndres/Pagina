@@ -1,0 +1,113 @@
+/* ============================================
+   SECCIÓN CONTACTO
+   ============================================
+   Este archivo estila:
+   - Información de contacto (dirección, teléfono, email)
+   - Formulario de contacto
+   - Campos de entrada con estilos
+   - Efectos focus en inputs
+   - Responsive para móvil y desktop
+   ============================================ */
+
+/* Sección de contacto */
+.contacto {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+/* Grid con información y formulario lado a lado */
+.contacto-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+/* Dos columnas en desktop */
+@media (min-width: 768px) {
+    .contacto-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ============================================
+   INFORMACIÓN DE CONTACTO
+   ============================================ */
+
+/* Título de información de contacto */
+.contacto-info h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+/* Elemento de información (dirección, teléfono, etc.) */
+.info-item {
+    margin-bottom: 1.5rem;
+}
+
+/* Etiqueta de información */
+.info-item h4 {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Contenido de información */
+.info-item p {
+    color: var(--text-light);
+}
+
+/* Enlaces en información (teléfono, email) */
+.info-item a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.info-item a:hover {
+    color: var(--primary);
+}
+
+/* ============================================
+   FORMULARIO DE CONTACTO
+   ============================================ */
+
+/* Contenedor del formulario */
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Grupo de campo de formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiqueta del formulario */
+.form-group label {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Inputs y textarea */
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+/* Efecto focus - cambiar borde a dorado y agregar sombra */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+}

@@ -1,0 +1,34 @@
+/* ============================================
+   ESTILOS RESPONSIVOS
+   ============================================
+   Este archivo contiene:
+   - Media queries para dispositivos móviles
+   - Ajustes de tamaños de fuente
+   - Ajustes de espaciado
+   - Ajustes de grid
+   - Optimizaciones para pantallas pequeñas
+   ============================================ */
+
+/* Ajustes para pantallas pequeñas (móvil) */
+@media (max-width: 768px) {
+    /* Reducir espaciado de navegación */
+    .nav {
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+
+    /* Reducir tamaño del título hero */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    /* Reducir tamaño de encabezados de sección */
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Aumentar padding del contenedor en móvil */
+    .container {
+        padding: 0 1.5rem;
+    }
+}

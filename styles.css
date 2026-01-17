@@ -1,0 +1,45 @@
+/* ============================================
+   COMPLEJO EDUCATIVO LUÍS BELTRÁN SANABRIA
+   ARCHIVO PRINCIPAL DE ESTILOS
+   ============================================
+   Este archivo importa todos los CSS separados
+   para mantener el código organizado y fácil
+   de mantener. Cada archivo estila una sección
+   específica de la página.
+   ============================================ */
+
+/* 1. Reset y variables globales */
+@import url('00-reset.css');
+
+/* 2. Header y navegación */
+@import url('01-header.css');
+
+/* 3. Sección hero */
+@import url('02-hero.css');
+
+/* 4. Botones */
+@import url('03-buttons.css');
+
+/* 5. Encabezados de secciones */
+@import url('04-section-headers.css');
+
+/* 6. Sección institución */
+@import url('05-institucion.css');
+
+/* 7. Sección noticias */
+@import url('06-noticias.css');
+
+/* 8. Sección programas académicos */
+@import url('07-programas.css');
+
+/* 9. Sección CTA */
+@import url('08-cta.css');
+
+/* 10. Sección contacto */
+@import url('09-contacto.css');
+
+/* 11. Footer */
+@import url('10-footer.css');
+
+/* 12. Estilos responsivos */
+@import url('11-responsive.css');

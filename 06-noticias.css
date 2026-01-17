@@ -1,0 +1,97 @@
+/* ============================================
+   SECCIÓN NOTICIAS Y EVENTOS
+   ============================================
+   Este archivo estila:
+   - Grid de tarjetas de eventos
+   - Imagen con gradiente
+   - Badge de categoría
+   - Efectos hover en tarjetas
+   - Enlaces "Leer Más"
+   - Responsive para móvil y desktop
+   ============================================ */
+
+/* Sección de noticias con fondo claro */
+.noticias {
+    padding: 4rem 0;
+    background-color: var(--light-bg);
+}
+
+/* Grid de tarjetas de noticias */
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Tres columnas en desktop */
+@media (min-width: 768px) {
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tarjeta de noticia */
+.news-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+}
+
+/* Efecto hover - elevar tarjeta y aumentar sombra */
+.news-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+/* Imagen de la noticia - con gradiente azul */
+.news-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+/* Contenedor del contenido de la tarjeta */
+.news-content {
+    padding: 1.5rem;
+}
+
+/* Badge de categoría - dorado */
+.news-badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Título de la noticia */
+.news-card h4 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción de la noticia */
+.news-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Enlace "Leer Más" - dorado */
+.news-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.news-link:hover {
+    color: var(--primary);
+}

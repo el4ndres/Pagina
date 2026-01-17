@@ -1,0 +1,69 @@
+/* ============================================
+   SECCIÓN PROGRAMAS ACADÉMICOS
+   ============================================
+   Este archivo estila:
+   - Grid de 4 tarjetas de programas
+   - Descripción de cada programa
+   - Lista de características
+   - Efectos hover en tarjetas
+   - Responsive para móvil y desktop
+   ============================================ */
+
+/* Sección de programas académicos */
+.programas {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+/* Grid de tarjetas de programas */
+.programas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Dos columnas en desktop */
+@media (min-width: 768px) {
+    .programas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tarjeta de programa */
+.programa-card {
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+/* Efecto hover - cambiar borde a dorado y agregar sombra */
+.programa-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Título del programa */
+.programa-card h4 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* Descripción del programa */
+.programa-card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+/* Lista de características del programa */
+.programa-list {
+    list-style: none;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.programa-list li {
+    padding: 0.4rem 0;
+}

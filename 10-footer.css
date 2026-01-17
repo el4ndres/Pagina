@@ -1,0 +1,112 @@
+/* ============================================
+   FOOTER
+   ============================================
+   Este archivo estila:
+   - Fondo azul marino
+   - Tres columnas de información
+   - Enlaces rápidos
+   - Información de contacto
+   - Derechos de autor
+   - Responsive para móvil y desktop
+   ============================================ */
+
+/* Footer principal con fondo azul marino */
+.footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 3rem 0 1rem;
+}
+
+/* Grid de contenido del footer */
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Tres columnas en desktop */
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Sección del footer */
+.footer-section h4 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Lista de enlaces del footer */
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+/* ============================================
+   FOOTER BOTTOM - DERECHOS DE AUTOR
+   ============================================ */
+
+/* Sección inferior del footer */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Flexbox horizontal en desktop */
+@media (min-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+/* Texto de derechos de autor */
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* Enlaces inferiores (Política, Términos) */
+.footer-links-bottom {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links-bottom a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-links-bottom a:hover {
+    color: var(--accent);
+}

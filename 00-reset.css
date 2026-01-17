@@ -1,0 +1,56 @@
+/* ============================================
+   RESET Y VARIABLES GLOBALES
+   ============================================
+   Este archivo contiene:
+   - Reset de estilos por defecto
+   - Variables CSS globales
+   - Configuración base de tipografía
+   - Estilos generales del body
+   ============================================ */
+
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS - Colores y estilos reutilizables */
+:root {
+    --primary: #1a3a52;           /* Azul marino principal */
+    --secondary: #2d5a7b;         /* Azul marino secundario */
+    --accent: #d4a574;            /* Dorado - color de acento */
+    --light-bg: #f8f9fa;          /* Fondo claro para secciones */
+    --border-color: #e8eaed;      /* Color de bordes */
+    --text-dark: #1a3a52;         /* Texto oscuro */
+    --text-light: #555555;        /* Texto gris claro */
+    --white: #ffffff;             /* Blanco puro */
+    --transition: all 0.3s ease;  /* Transición suave estándar */
+}
+
+/* Scroll suave en toda la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos base del body */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+/* Estilos para todos los títulos (h1-h6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Contenedor principal - centrado y con padding responsivo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

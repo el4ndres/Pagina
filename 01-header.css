@@ -1,0 +1,123 @@
+/* ============================================
+   HEADER Y NAVEGACIÓN
+   ============================================
+   Este archivo estila:
+   - Header sticky en la parte superior
+   - Logo con icono y texto
+   - Menú de navegación con efectos hover
+   - Responsive para móvil y desktop
+   ============================================ */
+
+/* Header principal - sticky en la parte superior */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 0;
+}
+
+/* Contenedor del header - flexbox para alinear logo y nav */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo - icono + texto */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+/* Icono del logo - cuadrado con gradiente */
+.logo-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Texto del logo - oculto en móvil */
+.logo-text {
+    display: none;
+}
+
+.logo-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo-subtitle {
+    font-size: 0.65rem;
+    color: var(--accent);
+    margin: 0;
+}
+
+/* Mostrar texto del logo en desktop */
+@media (min-width: 768px) {
+    .logo-text {
+        display: block;
+    }
+}
+
+/* Navegación - menú horizontal */
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Enlaces de navegación con efecto subrayado */
+.nav-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+/* Subrayado animado en hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: var(--transition);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Responsive - reducir gap en móvil */
+@media (max-width: 768px) {
+    .nav {
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+}
